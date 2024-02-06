@@ -76,6 +76,19 @@ body {
     width: 90%;
     flex-direction: column;
   }
+
+  .latar .latar-kiri p:ntn-child(1) {
+    font-size: 8;
+  }
+
+  .latar .latar-kiri p {
+    font-size: 10;
+  }
+
+  .latar .latar-kiri h1 {
+    font-size: 24;
+  }
+
   .latar .latar-kanan {
     display: flex;
     justify-content: center;
@@ -94,12 +107,12 @@ body {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    border: 1px black solid;
+    /* border: 1px black solid; */
   }
 
   .latar .latar-button button a {
     padding: 500px 100px 500px 100px;
     color: transparent;
-    border: 1px black solid;
+    /* border: 1px black solid; */
   }
 }
