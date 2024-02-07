@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav nav"
+    "contentright contentright contentright contentleft";
+}
+
+/* Navbar */
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 78px;
+  /* border: 1px black solid; */
+}
+
+.nav .logo {
+  margin-left: 50px;
+  width: 199px;
+  height: 40px;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-right: 25px;
+}
+
+.nav ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 25px;
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #002662;
+  font-size: 16px;
+}
+
+/* Content */
+/* right */
+.content-right {
+  width: 100%;
+  height: 946px;
+  grid-area: contentright;
+  /* border: 1px black solid; */
+  background-image: url(./assets/Picture\ Kereta.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-right .gradasi {
+  position: relative;
+  width: 100%;
+  height: 946px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), transparent);
+}
+
+.content-right .content-right-text {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  top: 920px;
+  left: 50px;
+}
+
+.content-right .content-right-text .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-right .content-right-text .footer .box-map {
+  display: flex;
+  flex-direction: row;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(197, 224, 247, 0.5);
+  margin-right: 10px;
+  border-radius: 4px;
+  border: 1px white solid;
+}
+
+.content-right .content-right-text .footer .box-map img {
+  margin: auto;
+}
+
+.content-right .content-right-text .footer p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20px;
+}
+
+.content-right .content-right-text .footer .circle {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-right .content-right-text .footer .circle .dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.content-right .content-right-text .footer .circle .dot1 {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(54, 171, 165, 1);
+  border-radius: 50%;
+  margin: 10px;
+}
+
+/* left */
+.content-left {
+  width: 100%;
+  grid-area: contentleft;
+  /* border: 1px black solid; */
+}
